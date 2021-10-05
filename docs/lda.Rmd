@@ -1,0 +1,89 @@
+---
+title: "Analyse discriminante linéaire"
+author: '....'
+date: "..."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R
+library(mlearning)
+```
+
+# Objectif
+
+Ce document s'intéresse à l'analyse discriminante linéaire. 
+
+**Ce projet est un projet cadré. Vous devez uniquement répondre à la question posée.**
+
+# Analyse
+
+Vous avez pour objectif de proposer un outil de classification qui classe les hommes et les femmes. 
+
+> Importez les données `learning.csv` présent dans le dossier `docs`. Assurez vous que chaque variable soit dans un format correcte. 
+
+```{r import}
+learning <- ___()
+```
+
+> Réalisez 3 graphiques différents de votre choix pour explorer les données de learning.csv. Chaque graphique doit être commenté en 1 à 2 lignes.
+
+```{r plot1}
+
+```
+
+```{r plot2}
+
+```
+
+```{r plot3}
+
+```
+
+> Complétez ce chunk afin de diviser ce jeu de donnée en un set d'apprentissage et en un set de test. Utilisez 7/10 des observations pour votre set d'apprentissage. Commentez ce chunk en 3 lignes maximum. 
+
+```{r}
+set.seed(42)
+# Ajoutez vos instructions ici
+
+# 
+learn_set <- 
+learn_test <- 
+```
+
+> Phase 1 : Création de votre outil de classification. Utilisez la lda afin de réaliser un classifieur qui prédit le genre de l'individu étudié.
+
+```{r}
+bio_lda <- ___
+```
+
+
+> Phase 2 : test de votre outil. Obtenez les classes prédites par la lda.
+
+```{r}
+____ <- predict(bio_lda,___)
+```
+
+> Réalisez une matrice de confusion sur vos résultats. Critiquez en 5 lignes maximum votre résultat.
+
+```{r}
+bio_conf <- ___(___, ___$___)
+plot(bio_conf)
+summary(bio_conf)
+```
+
+
+> Phase 3 : Déployez votre classifieur. Importez les données `deploy_set.csv`. Prédisez les classes de la variable genre.
+
+```{r}
+deploy <- read()
+deploy_pred <- ___(___,___)
+```
+
+> Importez le jeu de données `deploy_solution.csv`. Comparez vos résultats de prédiction avec les bonnes réponses. Commentez vos résultats en 3 lignes maximum.
+
+```{r}
+
+```
+
