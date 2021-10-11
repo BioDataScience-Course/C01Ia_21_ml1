@@ -12,10 +12,10 @@ Ce projet est un projet **individuel**, **court** et **cadré**. Ce dernier doit
 
 Ce projet vous permet de :
 
-- créer un algorithme de classification supervisée
-- tester cet algorithme
-- décrire l'algorithme grâce aux métriques de performance
-- déployer cet algorithme.
+- créer un classifieur
+- tester ce classifieur
+- décrire le classifieur grâce aux métriques de performance
+- déployer ce classifieur.
 
 ## Consignes
 

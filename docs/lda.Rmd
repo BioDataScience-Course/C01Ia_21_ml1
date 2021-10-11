@@ -17,7 +17,7 @@ library(mlearning)
 
 # Introduction
 
-Ce document s'intéresse à la création, la mise en place et au déploiement d'un algorithme basé sur l'analyse discriminante linéaire. Cet algorithme doit pouvoir discriminer des hommes et des femmes.
+Ce document s'intéresse à la création, la mise en place et au déploiement d'un classifieur basé sur l'analyse discriminante linéaire. Cet algorithme doit pouvoir discriminer des hommes et des femmes.
  
 # Analyse
 
@@ -43,6 +43,8 @@ learning <- ___()
 
 ```
 
+<!--# Avant de continuer ce travail, avez-vous bien vérifier le format de chaque variable ? -->
+
 <!--% Complétez ce chunk afin de diviser ce jeu de donnée en un set d'apprentissage et en un set de test. Utilisez 7/10 des observations pour votre set d'apprentissage. -->
 
 ```{r}
@@ -52,15 +54,15 @@ learn_set <-
 learn_test <- 
 ```
 
-## Apprentissage de l'algorithme
+## Apprentissage du modèle
 
-<!--% Utilisez la lda afin de réaliser un algorithme qui prédit le genre de l'individu étudié.-->
+<!--% Utilisez la lda afin de réaliser un modèle qui prédit le genre de l'individu étudié.-->
 
 ```{r}
 bio_lda <- ___
 ```
 
-## Test de l'algorithme
+## Test du modèle
 
 <!--% Obtenez les classes prédites par la lda.-->
 
@@ -78,9 +80,9 @@ summary(___)
 
 <!--% Décrivez vos observations en 5 à 10 lignes.-->
 
-## Déploiement de votre algorithme
+## Déploiement du modèle
 
-<!--% Déployez votre algorithme. Importez les données `deploy_set.csv`. Prédisez les classes de la variable genre.-->
+<!--% Déployez votre modèle. Importez les données `deploy_set.csv`. Prédisez les classes de la variable genre.-->
 
 ```{r}
 deploy <- read()
@@ -97,4 +99,4 @@ deploy_pred <- ___(___,___)
 
 ```
 
-<!--# En pratique, cette étape de vérification n'est pas réalisée. Votre algorithme a déjà été testé.-->
+<!--# En pratique, cette étape de vérification n'est pas réalisée. Votre modèle a déjà été testé.-->
